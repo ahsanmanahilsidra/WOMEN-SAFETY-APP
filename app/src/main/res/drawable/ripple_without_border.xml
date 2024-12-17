@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="@android:color/darker_gray">
+
+    <!-- This is the outer circle with a gradient color (white on top, purple on bottom) -->
+    <item>
+        <shape android:shape="oval">
+            <gradient
+                android:startColor="@android:color/white"
+            android:endColor="@color/purpel"
+            android:angle="90" />
+                android:width="100dp"
+                android:height="100dp"/>  <!-- Size of the outer circle -->
+        </shape>
+    </item>
+
+    <!-- This is the inner smaller circle (transparent) -->
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="@android:color/transparent"/>  <!-- Inner circle is transparent -->
+            <size
+                android:width="70dp"
+                android:height="70dp"/>  <!-- Size of the inner circle -->
+        </shape>
+    </item>
+</ripple>

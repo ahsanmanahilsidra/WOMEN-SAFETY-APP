@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="@android:color/darker_gray">
+    <!-- This is the outer circle -->
+    <item>
+        <shape
+            android:shape="oval">
+            <solid android:color="@android:color/white"/> <!-- Outer circle color -->
+            <size
+                android:width="100dp"
+                android:height="100dp"/> <!-- Size of the outer circle -->
+            <!-- Full circle (100% corner radius) -->
+        </shape>
+    </item>
+
+    <!-- This is the inner smaller circle -->
+    <item>
+        <shape
+            android:shape="oval">
+            <solid android:color="@color/pink"/> <!-- Inner circle color -->
+            <size
+                android:width="70dp"
+                android:height="70dp"/> <!-- Size of the inner circle (smaller) -->
+            <!-- Full circle (100% corner radius) -->
+        </shape>
+    </item>
+</ripple>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottombar_navigation"
+    app:startDestination="@id/dashboard">
+
+    <fragment
+        android:id="@+id/dashboard"
+        android:name="com.example.women_safety_app.dashboard"
+        android:label="fragment_dashboard"
+        tools:layout="@layout/fragment_dashboard">
+        <action
+            android:id="@+id/action_homefragment_to_sos"
+            app:destination="@id/sos" />
+        <action
+            android:id="@+id/action_dashboard_to_chat"
+            app:destination="@id/chat" />
+        <action
+            android:id="@+id/action_dashboard_to_notifications"
+            app:destination="@id/notifications" />
+        <action
+            android:id="@+id/action_dashboard_to_sos"
+            app:destination="@id/sos" />
+        <action
+            android:id="@+id/action_dashboard_to_profile33"
+            app:destination="@id/profile3" />
+
+
+    </fragment>
+    <fragment
+        android:id="@+id/chat"
+        android:name="com.example.women_safety_app.chat"
+        android:label="fragment_chat"
+        tools:layout="@layout/fragment_chat" >
+        <action
+            android:id="@+id/action_chat_to_dashboard"
+            app:destination="@id/dashboard" />
+        <action
+            android:id="@+id/action_chat_to_sos"
+            app:destination="@id/sos" />
+        <action
+            android:id="@+id/action_chat_to_notifications"
+            app:destination="@id/notifications" />
+    </fragment>
+    <fragment
+        android:id="@+id/notifications"
+        android:name="com.example.women_safety_app.Notifications"
+        android:label="fragment_notifications"
+        tools:layout="@layout/fragment_notifications" >
+        <action
+            android:id="@+id/action_notifications_to_sos"
+            app:destination="@id/sos" />
+        <action
+            android:id="@+id/action_notifications_to_dashboard"
+            app:destination="@id/dashboard" />
+    </fragment>
+    <fragment
+        android:id="@+id/sos"
+        android:name="com.example.women_safety_app.Sos"
+        android:label="fragment_sos"
+        tools:layout="@layout/fragment_sos" >
+        <action
+            android:id="@+id/action_sos_to_notifications"
+            app:destination="@id/notifications" />
+        <action
+            android:id="@+id/action_sos_to_chat"
+            app:destination="@id/chat" />
+        <action
+            android:id="@+id/action_sos_to_dashboard"
+            app:destination="@id/dashboard" />
+    </fragment>
+    <fragment
+        android:id="@+id/profile3"
+        android:name="com.example.women_safety_app.Profile"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" >
+
+        <action
+            android:id="@+id/action_profile3_to_dashboard"
+            app:destination="@id/dashboard" />
+    </fragment>
+</navigation>

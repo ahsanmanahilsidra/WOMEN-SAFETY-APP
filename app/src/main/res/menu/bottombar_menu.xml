@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/dashboard"
+        android:enabled="true"
+        app:iconSize="10dp"
+        android:icon="@drawable/home"
+        android:title="Home"/>
+    <item
+        android:id="@+id/sos"
+        android:enabled="true"
+        app:iconSize="10dp"
+        android:icon="@drawable/power"
+        android:title="SOS"/>
+    <item
+        android:id="@+id/chat"
+        android:enabled="true"
+        app:iconSize="10dp"
+        android:icon="@drawable/caht"
+        android:title="Chats"/>
+    <item
+        android:id="@+id/notifications"
+        android:enabled="true"
+        app:iconSize="10dp"
+        android:icon="@drawable/notification"
+        android:title="Notifications"/>
+
+</menu>

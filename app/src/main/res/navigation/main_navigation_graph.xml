@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation_graph"
+    app:startDestination="@id/signup_login">
+    <fragment
+        android:id="@+id/signup_login"
+        android:name="com.example.women_safety_app.Signup_login"
+        android:label="fragment_signup_login"
+        tools:layout="@layout/fragment_signup_login" >
+        <action
+            android:id="@+id/action_signup_login_to_login"
+            app:destination="@id/login" />
+        <action
+            android:id="@+id/action_signup_login_to_signup"
+            app:destination="@id/signup" />
+        <action
+            android:id="@+id/action_signup_login_to_signup_guardian"
+            app:destination="@id/signup_guardian" />
+    </fragment>
+    <fragment
+        android:id="@+id/login"
+        android:name="com.example.women_safety_app.Login"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_login_to_homefragment"
+            app:destination="@id/homefragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/signup"
+        android:name="com.example.women_safety_app.Signup"
+        android:label="fragment_signup"
+        tools:layout="@layout/fragment_signup" >
+        <action
+            android:id="@+id/action_signup_to_forgot_password"
+            app:destination="@id/forgot_password" />
+        <action
+            android:id="@+id/action_signup_to_homefragment"
+            app:destination="@id/homefragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/homefragment"
+        android:name="com.example.women_safety_app.Homefragment"
+        android:label="fragment_homefragment"
+        tools:layout="@layout/fragment_homefragment" >
+        <action
+            android:id="@+id/action_homefragment_to_profile"
+            app:destination="@id/profile" />
+    </fragment>
+    <fragment
+        android:id="@+id/forgot_password"
+        android:name="com.example.women_safety_app.Forgot_password"
+        android:label="fragment_forgot_password"
+        tools:layout="@layout/fragment_forgot_password" />
+    <fragment
+        android:id="@+id/signup_guardian"
+        android:name="com.example.women_safety_app.Signup_guardian"
+        android:label="fragment_signup_guardian"
+        tools:layout="@layout/fragment_signup_guardian" />
+    <fragment
+        android:id="@+id/profile"
+        android:name="com.example.women_safety_app.Profile"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_profile_to_homefragment"
+            app:destination="@id/homefragment" />
+        <action
+            android:id="@+id/action_profile_to_edit_profile"
+            app:destination="@id/edit_profile" />
+        <action
+            android:id="@+id/action_profile_to_login"
+            app:destination="@id/login" />
+        <action
+            android:id="@+id/action_profile_to_edit_profile2"
+            app:destination="@id/edit_profile" />
+    </fragment>
+    <fragment
+        android:id="@+id/edit_profile"
+        android:name="com.example.women_safety_app.Edit_profile"
+        android:label="fragment_edit_profile"
+        tools:layout="@layout/fragment_edit_profile" >
+        <action
+            android:id="@+id/action_edit_profile_to_profile"
+            app:destination="@id/profile" />
+    </fragment>
+</navigation>

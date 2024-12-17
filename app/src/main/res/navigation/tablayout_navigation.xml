@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tablayout_navigation"
+    app:startDestination="@id/quets">
+
+    <fragment
+        android:id="@+id/quets"
+        android:name="com.example.women_safety_app.Quets"
+        android:label="fragment_quets"
+        tools:layout="@layout/fragment_quets" >
+        <action
+            android:id="@+id/action_quets_to_mapsFragment"
+            app:destination="@id/mapsFragment" />
+        <action
+            android:id="@+id/action_quets_to_safety_Advisor"
+            app:destination="@id/safety_Advisor" />
+    </fragment>
+    <fragment
+        android:id="@+id/mapsFragment"
+        android:name="com.example.women_safety_app.MapsFragment"
+        android:label="fragment_maps"
+        tools:layout="@layout/fragment_maps" >
+        <action
+            android:id="@+id/action_mapsFragment_to_quets"
+            app:destination="@id/quets" />
+        <action
+            android:id="@+id/action_mapsFragment_to_safety_Advisor"
+            app:destination="@id/safety_Advisor" />
+    </fragment>
+    <fragment
+        android:id="@+id/safety_Advisor"
+        android:name="com.example.women_safety_app.safety_Advisor"
+        android:label="fragment_safety__advisor"
+        tools:layout="@layout/fragment_safety__advisor" >
+        <action
+            android:id="@+id/action_safety_Advisor_to_mapsFragment"
+            app:destination="@id/mapsFragment" />
+        <action
+            android:id="@+id/action_safety_Advisor_to_quets"
+            app:destination="@id/quets" />
+    </fragment>
+</navigation>

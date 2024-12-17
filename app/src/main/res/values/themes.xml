@@ -1,0 +1,10 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.WOMENSAFETYAPP" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">@color/purpel</item>
+        <item name="android:navigationBarColor">#000000</item>
+    </style>
+
+    <style name="Theme.WOMENSAFETYAPP" parent="Base.Theme.WOMENSAFETYAPP" />
+</resources>
